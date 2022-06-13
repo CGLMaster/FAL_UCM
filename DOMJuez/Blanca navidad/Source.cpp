@@ -1,7 +1,3 @@
-//NOMBRE y APELLIDOS
-//Carlos Gomez Lopez
-
-
 #include <iostream>
 #include <fstream>
 #include <vector>
