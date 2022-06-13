@@ -1,6 +1,3 @@
-// NOMBRE Y APELLIDOS
-// CARLOS GOMEZ LOPEZ
-
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -8,8 +5,8 @@
 using namespace std;
 
 // Q { num >= 0 }
-// R { complemetario() >= 0 && invertido() >= 0 } donde invertido() es una funcion que invierte el numero introducido y complementario() el número complementario al introducido
-// El coste de la funcion en el peor de los casos es O(N) donde N es el número de cifras del numero
+// R { complemetario() >= 0 && invertido() >= 0 } donde invertido() es una funcion que invierte el numero introducido y complementario() el nÃºmero complementario al introducido
+// El coste de la funcion en el peor de los casos es O(N) donde N es el nÃºmero de cifras del numero
 int complementario(int num, int cont) {
 	int comp = 0, aux = 0, aux2 = 0, resta = 0;
 	for (int i = cont - 1; i >= 0; i--) {
