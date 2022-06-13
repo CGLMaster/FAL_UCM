@@ -1,19 +1,16 @@
-// NOMBRE Y APELLIDOS
-// CARLOS GOMEZ LOPEZ
-
 #include <iostream>
 #include <fstream>
 #include <vector>
 using namespace std;
 
-// El coste de la funcion en el peor de los casos es O(log(N)), donde N es el n˙mero de elementos de la curva
+// El coste de la funcion en el peor de los casos es O(log(N)), donde N es el n√∫mero de elementos de la curva
 int menor(vector<int> const v, int ini, int fin) {
 	int mitad = 0;
 	if (ini + 1 == fin) return v[ini];
 	else {
 		mitad = (ini + fin) / 2;
-		if (v[mitad] > v[mitad - 1]) return menor(v, ini, mitad); //Si de la curva el valor es m·s pequeÒo el de delante de la mitad, entonces la mitad no es el mÌnimo
-		else return menor(v, mitad, fin); //Si de la curva el valor de la mitad es m·s pequeÒo, entonces significa que sigue decreciendo o es el mÌnimo
+		if (v[mitad] > v[mitad - 1]) return menor(v, ini, mitad); //Si de la curva el valor es m√°s peque√±o el de delante de la mitad, entonces la mitad no es el m√≠nimo
+		else return menor(v, mitad, fin); //Si de la curva el valor de la mitad es m√°s peque√±o, entonces significa que sigue decreciendo o es el m√≠nimo
 	}
 }
 
