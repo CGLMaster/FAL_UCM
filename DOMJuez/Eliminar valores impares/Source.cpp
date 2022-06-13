@@ -1,6 +1,3 @@
-// NOMBRE Y APELLIDOS 
-// Carlos Gómez López
-
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -11,7 +8,7 @@ using namespace std;
 // I {vector<int> v : 0 <= pos <= i < v.size() : v[i] % 2 == 0 --> v[pos] = v[i]}
 // C : N - 1
 // R { vector<int> v : 0 <= i < N : v[i] % 2 == 0 }
-// El coste de la función en el peor de los casos es O(N), donde N es el número de elementos del vector
+// El coste de la funciÃ³n en el peor de los casos es O(N), donde N es el nÃºmero de elementos del vector
 void eliminaImpares(vector<int>& v) {
 	int pos = 0;
 	for (long long int i = 0; i < v.size(); i++) {
