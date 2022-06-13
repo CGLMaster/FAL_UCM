@@ -1,7 +1,3 @@
-//NOMBRE y APELLIDOS
-//Carlos Gomez Lopez
-
-
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -12,7 +8,7 @@ using namespace std;
 // I { 0 <= i < N : v[i-1] >= v[i] : cont++ && masGrande = max(masGrande, cont) }
 // C : N - 1
 // R { 1 <= cont < N }
-//El coste de la funcion en el peor de los casos es O(N) donde N es el número de alturas de cada pista
+//El coste de la funcion en el peor de los casos es O(N) donde N es el nÃºmero de alturas de cada pista
 int pistaLarga(vector<int> v) {
 	int cont = 1, masGrande = 0;
 	if (v.size() != 0) {
