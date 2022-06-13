@@ -1,7 +1,3 @@
-//NOMBRE y APELLIDOS
-//Carlos Gomez Lopez
-
-
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -9,9 +5,9 @@ using namespace std;
 
 //Q { true }
 //R { boolean movil() : TRUE (pi*di == pd*dd && izq && der)} Donde pi, di, pd, dd es el peso y la distancia de la parte de arriba del movil, e izq es el booleano que indica si el lado izquierdo esta equilibrado
-// y der el booleano que indica si el lado derecho está equilibrado
+// y der el booleano que indica si el lado derecho estÃ¡ equilibrado
 
-//El coste de la funcion en el peor de los casos es O(log(N)) donde N es el número de zonas a comprobar del móvil 
+//El coste de la funcion en el peor de los casos es O(log(N)) donde N es el nÃºmero de zonas a comprobar del mÃ³vil 
 bool movil(int pi, int di, int pd, int dd, int&total) {
 	//Comprueba si se cumple que pi*di = pd*dd
 	if (pi != 0 && pd != 0) {
