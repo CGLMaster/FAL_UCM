@@ -1,6 +1,3 @@
-// NOMBRE Y APELLIDOS
-// CARLOS GOMEZ LOPEZ
-
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -10,7 +7,7 @@ using namespace std;
 //		 O(1) if n == 2
 //		 O(N) if n > 2
 // }
-// El coste de la función en el peor de los casos es O(N) donde N es el tamaño del vector
+// El coste de la funciÃ³n en el peor de los casos es O(N) donde N es el tamaÃ±o del vector
 // Q :{ (ParaTodo k : 0 <= k < v.size()) && (0 <= x : col == 2^x) }
 // R :{
 bool degradado(const vector<int>& v, int ini, int fin, int& total) {
