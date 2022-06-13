@@ -1,6 +1,3 @@
-// NOMBRE Y APELLIDOS
-// CARLOS GOMEZ LOPEZ
-
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -9,7 +6,7 @@ using namespace std;
 
 // Q { num > 0 }
 // R { invertido() > 0 } donde invertido() es una funcion que invierte el numero introducido
-// El coste de la funcion en el peor de los casos es O(N) donde N es el número de cifras del numero
+// El coste de la funcion en el peor de los casos es O(N) donde N es el nÃºmero de cifras del numero
 int invertido(int num) {
 	int inver = 0, cont = 0, aux = num;
 	bool acabo = false;
