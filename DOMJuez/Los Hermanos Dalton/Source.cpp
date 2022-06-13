@@ -1,6 +1,3 @@
-// NOMBRE Y APELLIDOS
-// CARLOS GOMEZ LOPEZ
-
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -10,7 +7,7 @@ using namespace std;
 // I {existe i: 1 <= i <= n : |v[i] - v[i-1]| = 1 }
 // FuncionCota : N-i 
 // R {Boolean dalton : True --> v[i-1] > v[i] || v[i-1] < v[i] : False --> v[i-1] <= v[i] || v[i-1] >= v[i]}
-// El coste de la funcion en el peor de los casos es O(N), donde N es el número de alturas que hay en una fila
+// El coste de la funcion en el peor de los casos es O(N), donde N es el nÃºmero de alturas que hay en una fila
 bool resuelveCaso() {
 	int N;
 	cin >> N;
