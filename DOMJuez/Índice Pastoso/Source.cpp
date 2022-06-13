@@ -1,17 +1,14 @@
-// NOMBRE Y APELLIDOS
-// CARLOS GOMEZ LOPEZ
-
 #include <iostream>
 #include <fstream>
 #include <vector>
 using namespace std;
 
 // Q { 0 <= i < N && 0 <= v[i] <= 100000 }
-// I { N > i >= 0 && v[i] = sum } donde sum es el sumatorio de todos los n˙meros que hay en las siguientes posiciones de v[i]
+// I { N > i >= 0 && v[i] = sum } donde sum es el sumatorio de todos los n√∫meros que hay en las siguientes posiciones de v[i]
 // C : N - i
 // R { esPastoso && 0 <= pos < N }
 // esPastoso { true --> 0 <= i < N : sum = v[i] ||false --> i = N-1}
-// El coste de la funcion en el peor de los casos es O(N), donde N es el tamaÒo del vector
+// El coste de la funcion en el peor de los casos es O(N), donde N es el tama√±o del vector
 bool esPastoso(vector<int> v, int& pos) {
 	int sum = 0;
 	for (int i = v.size() - 1; i >= 0; i--) {
