@@ -1,16 +1,13 @@
-// NOMBRE Y APELLIDOS
-// CARLOS GOMEZ LOPEZ
-
 #include <iostream>
 #include <fstream>
 #include <vector>
 using namespace std;
 
 // Q { 0 < N < 1000 }
-// I { 0 <= i < N : v[i] != menor && 0 <= i < N : sum += mayores[i]} donde menor es el número más pequeño del vector y maypres es un vector donde se guardan los valores más grandes
+// I { 0 <= i < N : v[i] != menor && 0 <= i < N : sum += mayores[i]} donde menor es el nÃºmero mÃ¡s pequeÃ±o del vector y maypres es un vector donde se guardan los valores mÃ¡s grandes
 // C : N - 1
 // R { sum = sumatorio() && 0 <= cont < N }
-// El coste de la funcion en el peor de los casos es O(N), donde N es el tamaño del vector
+// El coste de la funcion en el peor de los casos es O(N), donde N es el tamaÃ±o del vector
 long long int sumatorio(vector<long long int> v, int& cont, long long int menor) {
 	long long int sum = 0;
 	vector<long long int> mayores;
