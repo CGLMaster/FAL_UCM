@@ -1,7 +1,3 @@
-//NOMBRE y APELLIDOS
-//Carlos Gomez Lopez
-
-
 #include <iostream>
 #include <fstream>
 #include <vector>
@@ -11,7 +7,7 @@ using namespace std;
 // I { 0 <= i < N && boolean resultado : (True --> v[i] - v[i-1] = 1 && v[i] > v[i-1] && sumatorio todos los numeros iguales (cont) <= div) || False: resto de casos }
 // C : N - i
 // R { Boolean esDiverYporPelos() : True --> SI || False --> NO }
-//El coste de la funcion en el peor de los casos es de O(N), donde N es el número de elementos del vector
+//El coste de la funcion en el peor de los casos es de O(N), donde N es el nÃºmero de elementos del vector
 bool esDiverYporPelos(vector<int> v, int diver) {
 	bool resultado = true;
 	int i = 1, cont = 1;
