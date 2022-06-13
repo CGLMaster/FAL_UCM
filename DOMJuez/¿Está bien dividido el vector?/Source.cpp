@@ -1,17 +1,13 @@
-//NOMBRE y APELLIDOS
-//Carlos Gomez Lopez
-
-
 #include <iostream>
 #include <fstream>
 #include <vector>
 using namespace std;
 
 // Q { 0 <= p < N }
-// I { 0 <= i <= p < N AND mayor < menor } donde mayor es el mayor de los números antes de la posición indicada, y menor el número más pequeño después de la posición
+// I { 0 <= i <= p < N AND mayor < menor } donde mayor es el mayor de los nÃºmeros antes de la posiciÃ³n indicada, y menor el nÃºmero mÃ¡s pequeÃ±o despuÃ©s de la posiciÃ³n
 // FuncionCota : N - p
 // R {boolean dividido: true --> (sumatorio de v de 0 a p < sumatorio de p+1 a N-1)  || (p+1 = N) : false --> sumatorio de v de 0 a p >= sumatorio de p+1 a N-1 }
-// El coste de la funcion en el peor de los casos es O(N), donde N es el tamaño del vector
+// El coste de la funcion en el peor de los casos es O(N), donde N es el tamaÃ±o del vector
 void resuelveCaso() {
 	int N, p;
 	cin >> N >> p;
