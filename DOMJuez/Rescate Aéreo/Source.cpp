@@ -1,18 +1,14 @@
-//NOMBRE y APELLIDOS
-//Carlos Gomez Lopez
-
-
 #include <iostream>
 #include <fstream>
 #include <vector>
 using namespace std;
 
 // Q { 0 < i < N && existe t : t < v[i] }
-// I { 0 < i <= k < N : sumatorio de v donde ini es el comienzo (i) y fin el final (k) del sumatorio : v[k] >= v[i] > t && cont > contGanador entonces se actualiza el intervalo} donde cont es el tamaÒo del
-// intervalo actual y contGanador del m·s grande
+// I { 0 < i <= k < N : sumatorio de v donde ini es el comienzo (i) y fin el final (k) del sumatorio : v[k] >= v[i] > t && cont > contGanador entonces se actualiza el intervalo} donde cont es el tama√±o del
+// intervalo actual y contGanador del m√°s grande
 // C : N - 1
 // R { 0 <= ini <= fin < numEdificios }
-// El coste de la funcion en el peor de los casos es O(N), donde N es el tamaÒo del vector
+// El coste de la funcion en el peor de los casos es O(N), donde N es el tama√±o del vector
 void intervalo(int& ini, int& fin, vector<long unsigned int> v, int t) {
 	bool inicial = false;
 	int cont = 0, contGanador = 0, final = 0, inic = 0;
