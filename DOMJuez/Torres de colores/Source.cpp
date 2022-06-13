@@ -1,12 +1,9 @@
-// NOMBRE Y APELLIDOS
-// CARLOS GOMEZ LOPEZ
-
 #include <iostream>
 #include <fstream>
 #include <vector>
 using namespace std;
 
-//El coste de la funcion en el peor de los casos es O(N^H), donde H es la altura de la torre y N el número de colores, en este caso siempre son 3 colores
+//El coste de la funcion en el peor de los casos es O(N^H), donde H es la altura de la torre y N el nÃºmero de colores, en este caso siempre son 3 colores
 bool esValida(const vector<string>& torre, int cont, int numAzul, int numVerde) {
 	//Caso en el que haya dos verdes seguidos
 	if (torre[cont] == "verde" && torre[cont - 1] == "verde") return false;
@@ -43,7 +40,7 @@ void construir(int h, vector<int>& colores, vector<string>& torre, int cont, int
 						sePuede = true;
 					}
 				}
-				//Si no se continúa construyendo la torre recursivamente, y se devuelve el color que se había disminuido
+				//Si no se continÃºa construyendo la torre recursivamente, y se devuelve el color que se habÃ­a disminuido
 				else construir(h, colores, torre, cont + 1, numAzul, numRojo, numVerde, sePuede);
 				colores[i]++;
 			}
