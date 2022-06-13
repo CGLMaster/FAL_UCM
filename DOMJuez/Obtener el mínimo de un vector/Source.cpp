@@ -1,12 +1,9 @@
-// NOMBRE Y APELLIDOS
-// CARLOS GOMEZ LOPEZ
-
 #include <iostream>
 #include <fstream>
 #include <vector>
 using namespace std;
 
-// El coste de la funcion en el peor de los casos es O(log(N)), donde N es el número de elementos del vector 
+// El coste de la funcion en el peor de los casos es O(log(N)), donde N es el nÃºmero de elementos del vector 
 int minimo(vector<int> const v, int ini, int fin) {
 	int mitad = 0;
 	if (ini + 1 == fin) return v[ini];
@@ -18,7 +15,7 @@ int minimo(vector<int> const v, int ini, int fin) {
 }
 
 /*
-Otra función que había hecho que salía bien el resultado, pero no tiene coste log(N) "creo"
+Otra funciÃ³n que habÃ­a hecho que salÃ­a bien el resultado, pero no tiene coste log(N) "creo"
 
 int minimo(vector<int> const v, int ini, int fin) {
 	if (v[fin] - v[ini] == 0) {
