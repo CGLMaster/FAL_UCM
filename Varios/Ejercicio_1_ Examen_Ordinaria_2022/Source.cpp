@@ -36,9 +36,9 @@ int segmentosVacios(vector<int> v) {
 
 // Apartado 4:
 //		Invariante I : {0 < v.size() && 0 <= i <= v.size() - 1  && num += (# cont : v[i]%2 == 0 && par)) && num += (# cont : par = (v[i] % 2 == 0)) }
-//		Funcion de cota C : i - N
+//		Funcion de cota C : N - i
 
-// Apartado 5: El coste de la función en el peor de los casos es O(N) donde N es el número de elementos a comprobar del vector
+// Apartado 5: El coste de la funciÃ³n en el peor de los casos es O(N) donde N es el nÃºmero de elementos a comprobar del vector
 
 void resuelveCaso() {
 	int num;
