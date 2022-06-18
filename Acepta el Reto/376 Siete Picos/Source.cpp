@@ -9,6 +9,7 @@ using namespace std;
 //				&& (i+1 = v.size() : v[i] > v[i-1] && v[i] > primero : cont++ ) && (v[i] > v[i - 1] && v[i] > v[i + 1] : cont++)}
 //Función de cota C : N - i
 //Postcondición R: {# p : vector<int> a : 0 < k < a.size() : a[k] > a[k-1] && a[k] > a[k+1]}
+// El coste de la función en el peor de los casos es O(N) donde N es el número de montañas
 
 int numPicos(vector<int> v) {
 	int primero = v[0], ultimo = v[v.size()-1];
