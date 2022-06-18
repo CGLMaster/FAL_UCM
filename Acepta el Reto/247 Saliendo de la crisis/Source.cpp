@@ -8,6 +8,7 @@ using namespace std;
 //Invariante I: {vector<int> a : 1 <= k : a.size() : forall k : v[k - 1] < v[k]}
 //Función de cota C : N - i + 1
 //Postcondición R: {bool p  = (vector<int> a : 1 <= k : a.size() : forall k : v[k - 1] < v[k])}
+// El coste de la función en el peor de los casos es O(N) donde N es el número de valores económicos medidos
 
 bool razonAbeja(vector<int> v) {
 	if (v.size() > 1) {
