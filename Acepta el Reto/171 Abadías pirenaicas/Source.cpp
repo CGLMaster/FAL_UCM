@@ -8,6 +8,7 @@ using namespace std;
 //Invariante I: { vector<int> a : 0 <= k < l < a.size()-2 : v[k] > v[l]}
 //Función de cota C : i - N - 1
 //Postcondición R: {#p : vector<int> a : 0 <= k < l < a.size() : forall k : v[k] > v[l]}
+//El coste de la función en el peor de los casos es O(N) donde N es el número de picos
 
 
 int abadias(vector<int> v) {
