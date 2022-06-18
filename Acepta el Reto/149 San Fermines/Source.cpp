@@ -9,6 +9,8 @@ using namespace std;
 //Invariante I: {int l : vector<int> a : 0 <= k < a.size() : l = max(l,v[k])}
 //Función de cota C : N - i
 //Postcondición R: {max l : vector<int> a : 0 <= k < a.size() : v[k]}
+// El coste de la función en el peor de los casos es O(N) donde N es el número de velocidades
+// El coste de la función en el peor de los casos es O(N) donde N es el número de velocidades
 
 int maxVelocidad(vector<int> v) {
 	int maxi = 0;
