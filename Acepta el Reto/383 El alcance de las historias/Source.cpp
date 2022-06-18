@@ -7,6 +7,7 @@ using namespace std;
 // Invariante I : {(end = (a[0] == 1) : vector<int> a : 0 <= p < q < a.size() - 1 && max = (a[p] - a[q] > max)) && (end = (a[0] != 1) : vector<int> a : 1 <= p < q < a.size() && max = (a[q] - a[p] > max))}
 // Funcion de cota C : i + 1 || N - i - 1
 // Postcondicion R : {max r : (vector<int> a : 0 <= p < q < v.size() : (a[p] - a[q] && a[0] == 1 ) || (a[q] - a[p] && a[0] != 1))}
+// El coste de la función en el peor de los casos es O(N) donde N es el número de páginas
 
 int alcance(vector<int> v) {
 	int rest = 0, max = -300000;
