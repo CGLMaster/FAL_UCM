@@ -8,6 +8,7 @@ using namespace std;
 //Invariante I: {}
 //Función de cota C : N - i + 1
 //Postcondición R: {min mn, max mx : vector<int> a : 0 <= k < a.size() : a[k] && (#p : mn == a[k]) && (#q : mx == a[k])}
+// El coste de la función en el peor de los casos es O(N) donde N es el número de temperaturas
 
 void calculoTemperatura(vector<long long int> v, long long int& mini, int& contmin, long long int& maxi, int& contmax) {
 	for (int i = 1; i < v.size(); i++) {
