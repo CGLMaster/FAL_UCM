@@ -8,6 +8,7 @@ using namespace std;
 //					fun multiplicatorio (v, p, q) : {int r = (0 <= p <= q < a.size() : q - p && a[p]*a[p+1]*...*a[q-1]*a[q])}
 // Funcion de cota C : N - i
 // Postcondicion R : {max cont : vector<int> a : 0 <= p <= q < a.size() : q - p && (a[p]*a[p+1]*...*a[q-1]*a[q] != 0)}
+// El coste de la función en el peor de los casos es O(N) donde N es el número de elementos del vector
 
 
 bool aprendiendoMult(vector<int> v, int& ini, int& fin, int& cont) {
