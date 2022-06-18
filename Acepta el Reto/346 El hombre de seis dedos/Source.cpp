@@ -7,6 +7,7 @@ using namespace std;
 // Invariante I : {(vector<int> a : 0 <= k <= a.size() - 1) && (end = (0 <= k <= fin < a.size() : abs(a[k] - a[fin]) >= A) : fin--) && int mayor = (end = (fin + 1 - k > mayor) : mayor = fin + 1 - k)}
 // Funcion de cota C : i
 // Postcondicion R : {max p : (vector<int> a : 0 <= k < fin < a.size() : fin - i && a[k] - a[fin] >= A)}
+// El coste de la función en el peor de los casos es O(N) donde N es el número de años
 
 int personas6D(vector<int>& v, int A) {
 	int mayor = 0, fin = v.size()-1;
