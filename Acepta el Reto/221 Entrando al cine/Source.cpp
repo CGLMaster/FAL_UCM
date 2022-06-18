@@ -8,6 +8,7 @@ using namespace std;
 //Invariante I: {vector<int> a : 0 <= l < k < a.size() : (forall l : v[l] % 2 == 0 ) && (forall k : v[k] % 2 != 0)}
 //Función de cota C : i - N
 //Postcondición R: {bool b : (true : vector<int> a : 0 <= l < k < a.size() : (forall l : v[l] % 2 == 0 ) && (#p , forall k : v[k] % 2 != 0))}
+// El coste de la función en el peor de los casos es O(N) donde N es el número de elementos
 
 bool condicionRamiro(vector<int> v, int& n) {
 	bool pares = false;
