@@ -8,6 +8,7 @@ using namespace std;
 //Invariante I: {vector<int> a : 0 <= k < a.size()-1 : a[k] == sumatorio (k+1 <= l < a.size() : a[l]) : int pos = k}
 //Función de cota C : i - N + 1
 //Postcondición R: {bool b = (int p = k : vector<int> a : 0 <= k < a.size() : a[k] == sumatorio (k+1 <= l < a.size() : a[l]) && max(a[k]))}
+// El coste de la función en el peor de los casos es O(N) donde N es el número de elementos
 
 void tapon(vector<int> v, int& pos) {
 	int sum = v[v.size() - 1];
