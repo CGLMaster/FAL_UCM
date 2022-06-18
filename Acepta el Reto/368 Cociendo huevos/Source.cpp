@@ -8,6 +8,7 @@ using namespace std;
 //Invariante I: {}
 //Función de cota C : N - i
 //Postcondición R: {}
+// El coste de la función en el peor de los casos es O(N) donde N es el número de tiempos
 
 int tiempoCocion(int h, int c) {
 	int t = 0;
