@@ -7,6 +7,7 @@ using namespace std;
 // Invariante I : {vector<int> a : 0 <= k < a.size() && r = ((0 <= k < a.size() : a[k] <= peso && primero) && ((0 <= l < a.size() : a[l] <= peso))}
 // Funcion de cota C : N - i
 // Postcondicion R : {max c : vector<int> a : 0 <= p <= q < a.size() : q - p : a[p] <= peso && a[q] <= peso}
+// El coste de la función en el peor de los casos es O(N) donde N es el número de palmeras
 
 int mayorTramo(vector<int> v, int peso) {
 	int ini = 0, last = 0, contMax = 0, contPalmeras = 0;
