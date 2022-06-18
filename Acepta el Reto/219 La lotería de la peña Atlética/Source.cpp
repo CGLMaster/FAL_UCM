@@ -8,6 +8,7 @@ using namespace std;
 //Invariante I: {vector<int> a : 0 <= k < a.size() : a[i] % 2 == 0}
 //Función de cota C : N - i
 //Postcondición R: {#p : vector<int> a : 0 <= k < a.size : a[k]%2 == 0}
+// El coste de la función en el peor de los casos es O(N) donde N es el número de numeros
 
 int numPares(vector<int> v) {
 	int cont = 0;
