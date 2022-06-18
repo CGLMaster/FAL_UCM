@@ -6,8 +6,9 @@ using namespace std;
 
 //Precondición Q: {vector<int> n : 1 <= n.size() <= 100000 && int m : 1 <= m < n.size() : v[m] < 10^9}
 //Invariante I: {}
-//Función de cota C : i - N - 1
+//Función de cota C : i + 1
 //Postcondición R: {#p : vector<int> n : 0 <= k < n.size() : v[k]*sumatorio(v[k+1])}
+// El coste de la función en el peor de los casos es O(N) donde N es el número de personas
 
 long long int numeroParejas(vector<int> v) {
 	int cont = 0;
