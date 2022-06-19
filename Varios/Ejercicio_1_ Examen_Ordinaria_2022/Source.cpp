@@ -12,22 +12,15 @@ using namespace std;
 
 int segmentosVacios(vector<int> v) {
 	int num = 0;
-	bool par = false;
 	int cont = 0;
 	if (v.size() > 0) {
 		for (int i = v.size()-1; i >= 0; i--) {
-			if (v[i] % 2 == 0 && par) {
+			if (v[i] % 2 == 0) {
 				cont++;
 				num += cont;
 			}
-			else if (v[i] % 2 == 0) {
-				cont++;
-				num++;
-				par = true;
-			}
 			else {
 				cont = 0;
-				par = false;
 			}
 		}
 	}
@@ -38,7 +31,7 @@ int segmentosVacios(vector<int> v) {
 //		Invariante I : {0 < v.size() && 0 <= i <= v.size() - 1  && num += (# cont : v[i]%2 == 0 && par)) && num += (# cont : par = (v[i] % 2 == 0)) }
 //		Funcion de cota C : i
 
-// Apartado 5: El coste de la funciÃ³n en el peor de los casos es O(N) donde N es el nÃºmero de elementos a comprobar del vector
+// Apartado 5: El coste de la función en el peor de los casos es O(N) donde N es el número de elementos a comprobar del vector
 
 void resuelveCaso() {
 	int num;
