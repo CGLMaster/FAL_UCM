@@ -3,11 +3,12 @@
 #include <vector>
 using namespace std;
 
-// Q { 2 <= N <= 100000 and 1 <= v[i] <= 10^6 }
-// I {existe i: 1 <= i <= n : |v[i] - v[i-1]| = 1 }
-// FuncionCota : N-i 
-// R {Boolean dalton : True --> v[i-1] > v[i] || v[i-1] < v[i] : False --> v[i-1] <= v[i] || v[i-1] >= v[i]}
-// El coste de la funcion en el peor de los casos es O(N), donde N es el n√∫mero de alturas que hay en una fila
+// Q : { 2 <= N <= 100000 and 1 <= v[i] <= 10^6 }
+// I : { 1 <= i < N && boolean dalton: (boolean decreciente: forall i: v[i-1] > v[i]) || (boolean creciente: forall i: v[i-1] < v[i])}
+// FuncionCota : N - i 
+// esDalton(v): {boolean b : (forall i : 1 <= i < N : v[i-1] > v[i]) || (forall i : 1 <= i < N : v[i-1] < v[i])}
+// R : {Boolean dalton : esDalton(v)}
+// El coste de la funcion en el peor de los casos es O(N), donde N es el n˙mero de alturas que hay en una fila
 bool resuelveCaso() {
 	int N;
 	cin >> N;
